@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F3DDC2B-93D8-4070-8788-C8161BD5981F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>imagemGolemCeleste.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_AprenderGolem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_AprenderGolem.Designer.cs">
+      <DependentUpon>Frm_AprenderGolem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CalcularLucro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CalcularLucro.Designer.cs">
+      <DependentUpon>Frm_CalcularLucro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CalculoToken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CalculoToken.Designer.cs">
+      <DependentUpon>Frm_CalculoToken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_FazerGolem1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_FazerGolem1.Designer.cs">
+      <DependentUpon>Frm_FazerGolem1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_FazerGolem2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_FazerGolem2.Designer.cs">
+      <DependentUpon>Frm_FazerGolem2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_FazerGolemAV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_FazerGolemAV.Designer.cs">
+      <DependentUpon>Frm_FazerGolemAV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_FazerGolemAV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_FazerGolemAV2.Designer.cs">
+      <DependentUpon>Frm_FazerGolemAV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_FazerGolemAVQuantidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_FazerGolemAVQuantidade.Designer.cs">
+      <DependentUpon>Frm_FazerGolemAVQuantidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_FazerGolemEH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_FazerGolemEH.Designer.cs">
+      <DependentUpon>Frm_FazerGolemEH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_FazerGolemEHQuantidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_FazerGolemEHQuantidade.Designer.cs">
+      <DependentUpon>Frm_FazerGolemEHQuantidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_GolemCeleste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_GolemCeleste.Designer.cs">
+      <DependentUpon>Frm_GolemCeleste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ItensFazerGolem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ItensFazerGolem.Designer.cs">
+      <DependentUpon>Frm_ItensFazerGolem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Questao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Questao.Designer.cs">
+      <DependentUpon>Frm_Questao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ResultadoAV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ResultadoAV.Designer.cs">
+      <DependentUpon>Frm_ResultadoAV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ResultadoEH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ResultadoEH.Designer.cs">
+      <DependentUpon>Frm_ResultadoEH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ResultadoLucroVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ResultadoLucroVenda.Designer.cs">
+      <DependentUpon>Frm_ResultadoLucroVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResultadoFinalToken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultadoFinalToken.Designer.cs">
+      <DependentUpon>ResultadoFinalToken.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Frm_AprenderGolem.resx">
+      <DependentUpon>Frm_AprenderGolem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CalcularLucro.resx">
+      <DependentUpon>Frm_CalcularLucro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CalculoToken.resx">
+      <DependentUpon>Frm_CalculoToken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_FazerGolem1.resx">
+      <DependentUpon>Frm_FazerGolem1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_FazerGolem2.resx">
+      <DependentUpon>Frm_FazerGolem2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_FazerGolemAV.resx">
+      <DependentUpon>Frm_FazerGolemAV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_FazerGolemAV2.resx">
+      <DependentUpon>Frm_FazerGolemAV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_FazerGolemAVQuantidade.resx">
+      <DependentUpon>Frm_FazerGolemAVQuantidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_FazerGolemEH.resx">
+      <DependentUpon>Frm_FazerGolemEH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_FazerGolemEHQuantidade.resx">
+      <DependentUpon>Frm_FazerGolemEHQuantidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_GolemCeleste.resx">
+      <DependentUpon>Frm_GolemCeleste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ItensFazerGolem.resx">
+      <DependentUpon>Frm_ItensFazerGolem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Questao.resx">
+      <DependentUpon>Frm_Questao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ResultadoAV.resx">
+      <DependentUpon>Frm_ResultadoAV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ResultadoEH.resx">
+      <DependentUpon>Frm_ResultadoEH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ResultadoLucroVenda.resx">
+      <DependentUpon>Frm_ResultadoLucroVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultadoFinalToken.resx">
+      <DependentUpon>ResultadoFinalToken.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imagemGolemCeleste.ico" />
+    <Content Include="Imagens\AçoVivo.png" />
+    <Content Include="Imagens\BarraDeFerroFantasma.png" />
+    <Content Include="Imagens\BarraDeTrilio.png" />
+    <Content Include="Imagens\ChaveDeArcoVoltaico.png" />
+    <Content Include="Imagens\EspiritoDaHarmonio.png" />
+    <Content Include="Imagens\FonteDeJade.png" />
+    <Content Include="Imagens\icons8-estimativa-48.png" />
+    <Content Include="Imagens\icons8-question-64.png" />
+    <Content Include="Imagens\imagemGolemCeleste.ico" />
+    <Content Include="Imagens\imagemGolemCeleste.png" />
+    <Content Include="Imagens\LapisLazuli.png" />
+    <Content Include="Imagens\LivroAprender.png" />
+    <Content Include="Imagens\MarteloFerreiro.png" />
+    <Content Include="Imagens\MicroAjustadorGiromatico.png" />
+    <Content Include="Imagens\tecidoLaDoVento.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
